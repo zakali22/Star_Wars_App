@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <%- include('partials/head') %>
+  </head>
+  <body>
+  	<%- include('partials/nav') %>
+  	<div class="jumbotron" style="background-image: url('/images/<%= heroImage %>')"></div>
+  	<div class="container title">
+  		<h4 class="text-sm-center"><%= title %></h4>
+  	</div>
+    <div class="container-fluid single_movie">
+      <div class="row d-flex justify-content-md-center">
+        <div class="col-md-6 col-xl-4">
+          <img src="/images/<%= posterImage %>" class="img-fluid mx-auto"/>
+        </div>
+        <div class="col-md-6 description mt-5 mt-md-0">
+          <h5 class="text-center">Description</h5>
+          <p class="mt-4"><%= description %></p>
+          <h5 class="text-center main">Main Characters</h5>
+          <ul id="mainChar">
+            <% for (var character in mainCharacters) { %>
+              <li class="mt-4 characters"><%= mainCharacters[character] %></li>
+            <% } %>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <%- include('partials/footer') %>
+    <%- include('partials/scripts') %>
+  </body>
+</html>

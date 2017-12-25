@@ -1,0 +1,237 @@
+body {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.nav {
+	width: 90%;
+	padding-right: 50px;
+	background: transparent;
+	z-index: 1;
+	display: flex;
+	flex-direction: row;
+}
+
+.nav-item {
+	padding-right: 50px;
+}
+
+.dropdown-menu {
+	background-color: black;
+	opacity: 0.8;
+	z-index: 1;
+}
+
+.dropdown-item {
+	z-index: 100;
+}
+
+a, a:link, a:hover, a:visited, a:active {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+.jumbotron {
+	width: 100%;
+	background-image: url('../images/death_star_image.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 80vh;
+	margin-top: -40px;
+}
+
+.jumbotron.single_movie {
+	background-position: top;
+}
+
+
+.title.container {
+	background-color: white;
+	width: 20%;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: relative;
+	top: -90px;
+	z-index: 1;
+	min-width: 300px;
+}
+
+.title.container h4 {
+	color: black;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.images {
+	width: 100%;
+}
+
+.images .image {
+	margin-bottom: 20px;
+}
+
+.images img {
+	width: 350px;
+	max-height: 500px;
+}
+
+.preview {
+	z-index: 1;
+	background-color: black;
+	color: white;
+	height: 100px;
+	position: relative;
+	top: -100px;
+	padding: 15px;
+	opacity: 0;
+	transition: opacity .7s;
+}
+
+.show {
+	opacity: 0.8;
+}
+
+.description {
+	line-height: 1.9em;
+}
+.description h5 {
+	border: 2px solid black;
+	max-width: 200px;
+	padding: 10px;
+}
+
+.description p {
+	width: 80%;
+	text-transform: none;
+}
+
+h5.main {
+	max-width: 250px;
+	padding: 15px;
+
+}
+
+#mainChar{
+	list-style: none;
+	padding: 0;
+	margin-top: 20px;
+}
+
+.characters {
+	display: inline;
+	margin-right: 15px;
+	text-transform: none;
+}
+
+footer {
+	margin-top: 70px;
+}
+
+footer a {
+	font-size: 20px;
+}
+
+footer .col-sm-6{
+	text-align: center;
+}
+
+
+
+// Media Queries
+@media (max-width: 1500px) {
+	.dropdown-item {
+		font-size: 15px;
+	}
+}
+@media (max-width: 1090px) {
+	.description p {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 992px) {
+	.images img {
+		width: 350px;
+		max-height: 450px;
+	}
+	.decription p {
+		width: 100%;
+	}
+	.jumbotron {
+		height: 60vh;
+	}
+}
+
+
+@media (max-width: 768px) {
+	.images {
+		width: 100%;
+	}
+
+	img {
+		display: block;
+		width: 300px;
+	}
+	.description {
+		display: block;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.description p {
+		width: 100%;
+		text-transform: none;
+	}
+
+	.description h5 {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 490px) {
+	.nav {
+		flex-direction: column;
+		margin-top: 30px;
+	}
+	.dropdown-menu {
+		margin-right: 40px;
+	}
+
+	.dropdown-item {
+		font-size: 13px;
+	}
+	.jumbotron {
+		margin-top: -110px;
+	}
+}
+
+
+@media (max-width: 420px) {
+	.dropdown-item {
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 350px) {
+	body {
+		overflow-x: hidden;
+	}
+
+	.title.container h4 {
+		font-size: 20px;
+		text-align: left;
+		padding-left: 15px;
+	}
+
+	.dropdown-menu {
+		margin-right: 4px;
+	}
+}
+
+

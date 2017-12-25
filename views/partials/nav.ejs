@@ -1,0 +1,13 @@
+<ul class="nav container justify-content-between">
+  <li class="nav-item">
+    <a class="nav-link active" href="/">Home</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Movies</a>
+    <div class="dropdown-menu dropdown-menu-left">
+    	<% for (var i = 0; i < movies.length; i++) { %>
+    		<a class="dropdown-item" href="/star_wars_episode/<%= movies[i].episode_number %>"><%= movies[i].title %></a>
+    	<% } %>
+    </div>
+  </li>
+</ul>

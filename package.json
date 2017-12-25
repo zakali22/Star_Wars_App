@@ -1,0 +1,15 @@
+{
+  "name": "star_wars",
+  "version": "1.0.0",
+  "description": "A star wars movie web app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zakeria Ali",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  }
+}
